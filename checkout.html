@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - NovaCart</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+    <div class="checkout-container">
+
+        <h1>🧾 Checkout</h1>
+        <p>Complete your order</p>
+
+
+        <div class="checkout-progress">
+
+            <div class="progress-step active">
+                <span>1</span>
+                <p>Delivery Address</p>
+            </div>
+
+            <div class="progress-line"></div>
+
+            <div class="progress-step">
+                <span>2</span>
+                <p>Payment</p>
+            </div>
+
+            <div class="progress-line"></div>
+
+            <div class="progress-step">
+                <span>3</span>
+                <p>Review</p>
+            </div>
+
+        </div>
+
+
+        <div class="checkout-step step-1">
+
+            <h2>Step 1: Delivery Address</h2>
+
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" placeholder="Enter your complete address"></textarea>
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" placeholder="Enter your city">
+                </div>
+
+                <div class="form-group">
+                    <label for="state">State</label>
+                    <input type="text" id="state" placeholder="Enter your state">
+                </div>
+
+                <div class="form-group">
+                    <label for="pincode">PIN Code</label>
+                    <input type="text" id="pincode" placeholder="Enter PIN code">
+                </div>
+
+            </div>
+
+            <button class="next-button">Next →</button>
+
+        </div>
+
+
+        <div class="checkout-step step-2">
+
+            <h2>Step 2: Payment Method</h2>
+
+            <div class="payment-options">
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="card">
+                    <span>💳 Credit / Debit Card</span>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="upi">
+                    <span>📱 UPI</span>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="net-banking">
+                    <span>🏦 Net Banking</span>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="cod">
+                    <span>💵 Cash on Delivery</span>
+                </label>
+
+            </div>
+
+            <div class="step-buttons">
+                <button class="back-button">← Back</button>
+                <button class="next-button">Next →</button>
+            </div>
+
+        </div>
+
+        <div class="checkout-step step-3">
+
+            <h2>Step 3: Review Your Order</h2>
+
+            <h3>Order  Items</h3>
+
+            <div class="review-items">
+
+            </div>
+
+            <h3>Delivery Address</h3>
+
+            <div class="review-address">
+
+            </div>
+
+            <h3>Payment Method</h3>
+
+            <div class="review-payment">
+
+            </div>
+
+            <h3>Order Summary</h3>
+
+            <div class="review-summary">
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span class="review-subtotal"></span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <span class="review-delivery"></span>
+                </div>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span class="review-total"></span>
+                </div>
+
+            </div>
+
+            <div class="step-buttons">
+                <button class="back-button">← Back</button>
+                <button class="place-order-button">Place Order</button>
+            </div>
+
+        </div>
+
+
+        <div class="order-success">
+
+            <h2>🎉 Order Placed Successfully!</h2>
+            <p>Thank you for shopping with NovaCart.</p>
+            <a href="index.html">Continue Shopping</a>
+            
+        </div>
+
+    </div>
+
+    <script src="checkout.js"></script>
+
+</body>
+</html>
