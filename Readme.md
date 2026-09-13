@@ -48,3 +48,8 @@ NovaCart/
 ├── checkout.js
 │
 └── images/
+
+
+## 🌐 Live Demo
+
+[View NovaCart Live](https://novacart-e-commerce-web-application.vercel.app/)
